@@ -5,17 +5,19 @@
 //  Created by João de Vasconcelos on 04/02/2022.
 //
 
+
 import SwiftUI
 
+
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
+  @StateObject var webViewStore = WebViewStore()
+
+  var body: some View {
+      WebView(webView: webViewStore.webView)
+      .onAppear {
+        self.webViewStore.webView.load(URLRequest(url: URL(string: "https://pos-terminal.vercel.app")!))
+      }
+  }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+

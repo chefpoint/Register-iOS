@@ -8,31 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CFDC7F4427AD593200131AB7 /* RegisterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7F3427AD593100131AB7 /* RegisterApp.swift */; };
-		CFDC7F4527AD593200131AB7 /* RegisterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7F3427AD593100131AB7 /* RegisterApp.swift */; };
 		CFDC7F4627AD593200131AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7F3527AD593100131AB7 /* ContentView.swift */; };
-		CFDC7F4727AD593200131AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7F3527AD593100131AB7 /* ContentView.swift */; };
 		CFDC7F4827AD593200131AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDC7F3627AD593200131AB7 /* Assets.xcassets */; };
-		CFDC7F4927AD593200131AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDC7F3627AD593200131AB7 /* Assets.xcassets */; };
+		CFDC7F5327AD5E0700131AB7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7F5227AD5E0700131AB7 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CFC703BF27AD6310004CC15C /* Register--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Register--iOS--Info.plist"; sourceTree = "<group>"; };
 		CFDC7F3427AD593100131AB7 /* RegisterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterApp.swift; sourceTree = "<group>"; };
 		CFDC7F3527AD593100131AB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CFDC7F3627AD593200131AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFDC7F3B27AD593200131AB7 /* Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFDC7F4127AD593200131AB7 /* Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFDC7F4327AD593200131AB7 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		CFDC7F5227AD5E0700131AB7 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CFDC7F3827AD593200131AB7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFDC7F3E27AD593200131AB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,8 +36,8 @@
 		CFDC7F2E27AD593100131AB7 = {
 			isa = PBXGroup;
 			children = (
+				CFC703BF27AD6310004CC15C /* Register--iOS--Info.plist */,
 				CFDC7F3327AD593100131AB7 /* Shared */,
-				CFDC7F4227AD593200131AB7 /* macOS */,
 				CFDC7F3C27AD593200131AB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +47,7 @@
 			children = (
 				CFDC7F3427AD593100131AB7 /* RegisterApp.swift */,
 				CFDC7F3527AD593100131AB7 /* ContentView.swift */,
+				CFDC7F5227AD5E0700131AB7 /* WebView.swift */,
 				CFDC7F3627AD593200131AB7 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -65,17 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				CFDC7F3B27AD593200131AB7 /* Register.app */,
-				CFDC7F4127AD593200131AB7 /* Register.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CFDC7F4227AD593200131AB7 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				CFDC7F4327AD593200131AB7 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,23 +81,6 @@
 			productReference = CFDC7F3B27AD593200131AB7 /* Register.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CFDC7F4027AD593200131AB7 /* Register (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CFDC7F4F27AD593200131AB7 /* Build configuration list for PBXNativeTarget "Register (macOS)" */;
-			buildPhases = (
-				CFDC7F3D27AD593200131AB7 /* Sources */,
-				CFDC7F3E27AD593200131AB7 /* Frameworks */,
-				CFDC7F3F27AD593200131AB7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Register (macOS)";
-			productName = "Register (macOS)";
-			productReference = CFDC7F4127AD593200131AB7 /* Register.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,9 +92,6 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					CFDC7F3A27AD593200131AB7 = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
-					CFDC7F4027AD593200131AB7 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -147,7 +110,6 @@
 			projectRoot = "";
 			targets = (
 				CFDC7F3A27AD593200131AB7 /* Register (iOS) */,
-				CFDC7F4027AD593200131AB7 /* Register (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -161,14 +123,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFDC7F3F27AD593200131AB7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CFDC7F4927AD593200131AB7 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -176,17 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFDC7F5327AD5E0700131AB7 /* WebView.swift in Sources */,
 				CFDC7F4627AD593200131AB7 /* ContentView.swift in Sources */,
 				CFDC7F4427AD593200131AB7 /* RegisterApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFDC7F3D27AD593200131AB7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CFDC7F4727AD593200131AB7 /* ContentView.swift in Sources */,
-				CFDC7F4527AD593200131AB7 /* RegisterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +190,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -297,6 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -314,10 +262,11 @@
 				DEVELOPMENT_TEAM = D7S2TY22W7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Register--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +279,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -344,10 +293,11 @@
 				DEVELOPMENT_TEAM = D7S2TY22W7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Register--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,64 +310,8 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CFDC7F5027AD593200131AB7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D7S2TY22W7;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "earth.joao.pos-terminal.Register";
-				PRODUCT_NAME = Register;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		CFDC7F5127AD593200131AB7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D7S2TY22W7;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "earth.joao.pos-terminal.Register";
-				PRODUCT_NAME = Register;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -438,15 +332,6 @@
 			buildConfigurations = (
 				CFDC7F4D27AD593200131AB7 /* Debug */,
 				CFDC7F4E27AD593200131AB7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CFDC7F4F27AD593200131AB7 /* Build configuration list for PBXNativeTarget "Register (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CFDC7F5027AD593200131AB7 /* Debug */,
-				CFDC7F5127AD593200131AB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
