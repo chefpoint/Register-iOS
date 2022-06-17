@@ -9,15 +9,36 @@
 import SwiftUI
 
 
-struct ContentView: View {
-  @StateObject var webViewStore = WebViewStore()
+//struct ContentView: View {
+//
+//    let character_limit = 6
+//
+//    @State private var deviceCode: String = ""
+//
+//    var body: some View {
+//        VStack {
+//            TextField("Device Code", text: $deviceCode)
+//                .font(.system(size: 100))
+//                .multilineTextAlignment(.center)
+//                .disableAutocorrection(true)
+//                .padding()
+//                .textFieldStyle(.plain)
+//                .onChange(of: self.deviceCode, perform: { value in
+//                    self.deviceCode = String(deviceCode.prefix(character_limit)).uppercased()
+//                })
+//        }
+//    }
+//}
 
-  var body: some View {
-      WebView(webView: webViewStore.webView)
-      .onAppear {
-        self.webViewStore.webView.load(URLRequest(url: URL(string: "https://pos-terminal.vercel.app")!))
-      }
-  }
+struct ContentView: View {
+    
+    @State private var showWebView = false
+    
+    var body: some View {
+//        WebView(url: URL(string: "http://192.168.4.51:3000")!)
+        WebView(url: URL(string: "https://pos.chefpoint.pt/")!)
+    }
+
 }
 
 
