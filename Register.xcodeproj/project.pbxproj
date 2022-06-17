@@ -274,7 +274,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "earth.joao.pos-terminal.Register";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.chefpoint.pos.Register;
 				PRODUCT_NAME = Register;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -305,7 +305,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "earth.joao.pos-terminal.Register";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.chefpoint.pos.Register;
 				PRODUCT_NAME = Register;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
