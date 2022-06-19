@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CFDC7F4427AD593200131AB7 /* RegisterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7F3427AD593100131AB7 /* RegisterApp.swift */; };
-		CFDC7F4627AD593200131AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7F3527AD593100131AB7 /* ContentView.swift */; };
 		CFDC7F4827AD593200131AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDC7F3627AD593200131AB7 /* Assets.xcassets */; };
 		CFDC7F5327AD5E0700131AB7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7F5227AD5E0700131AB7 /* WebView.swift */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		CFC703BF27AD6310004CC15C /* Register--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Register--iOS--Info.plist"; sourceTree = "<group>"; };
 		CFDC7F3427AD593100131AB7 /* RegisterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterApp.swift; sourceTree = "<group>"; };
-		CFDC7F3527AD593100131AB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CFDC7F3627AD593200131AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFDC7F3B27AD593200131AB7 /* Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDC7F5227AD5E0700131AB7 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -46,7 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				CFDC7F3427AD593100131AB7 /* RegisterApp.swift */,
-				CFDC7F3527AD593100131AB7 /* ContentView.swift */,
 				CFDC7F5227AD5E0700131AB7 /* WebView.swift */,
 				CFDC7F3627AD593200131AB7 /* Assets.xcassets */,
 			);
@@ -131,7 +128,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFDC7F5327AD5E0700131AB7 /* WebView.swift in Sources */,
-				CFDC7F4627AD593200131AB7 /* ContentView.swift in Sources */,
 				CFDC7F4427AD593200131AB7 /* RegisterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
