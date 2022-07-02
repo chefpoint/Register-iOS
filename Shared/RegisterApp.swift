@@ -10,6 +10,9 @@ import SwiftUI
 @main
 struct RegisterApp: App {
     
+//    let APP_URL = "https://pos.chefpoint.pt/"; // Production
+    let APP_URL = "http://Earth.local:3001/"; // Development
+    
     @State var skipSetup: Bool
     @State var inputValue: String
     
@@ -20,7 +23,7 @@ struct RegisterApp: App {
     init() {
         // Retrieve device_code from User Defaults
         let deviceCode = defaults.string(forKey: "device_code") ?? "invalid_device_code"
-        // Set device_code to be the input value
+        // Set input value to be the device_code
         inputValue = deviceCode
         // If device_code is invalid, show setup view
         skipSetup = deviceCode != "invalid_device_code"
@@ -36,7 +39,7 @@ struct RegisterApp: App {
         WindowGroup {
             if (skipSetup) {
                 // POS App
-                WebView(url: URL(string: "https://pos.chefpoint.pt/?device_code=" + inputValue)!)
+                WebView(url: URL(string: APP_URL + inputValue)!)
                     .onShake {
                         skipSetup = false
                     }
