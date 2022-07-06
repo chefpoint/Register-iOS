@@ -46,6 +46,8 @@ struct RegisterApp: App {
             } else {
                 // Setup Device
                 VStack {
+                    Text("Connecting to " + APP_URL)
+                        .foregroundColor(.accentColor)
                     TextField("Device Code", text: $inputValue)
                         .textFieldStyle(.roundedBorder)
                         .font(.system(size: 100))
