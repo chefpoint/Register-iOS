@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct RegisterApp: App {
     
-//    let APP_URL = "https://pos.chefpoint.pt/"; // Production
-    let APP_URL = "http://Earth.local:3001/"; // Development
+    let APP_URL = "https://pos.chefpoint.pt/"; // Production
+//    let APP_URL = "http://Earth.local:3001/"; // Development
     
     @State var skipSetup: Bool
     @State var inputValue: String
