@@ -10,9 +10,7 @@ import SwiftUI
 @main
 struct RegisterApp: App {
     
-    let APP_URL = "https://pos.chefpoint.pt/"; // Production
-//    let APP_URL = "http://Earth.local:3001/"; // Development
-    
+    @State var endpoint: String = "https://pos.chefpoint.pt/"
     @State var skipSetup: Bool
     @State var inputValue: String
     
@@ -39,15 +37,18 @@ struct RegisterApp: App {
         WindowGroup {
             if (skipSetup) {
                 // POS App
-                WebView(url: URL(string: APP_URL + inputValue)!)
+                WebView(url: URL(string: endpoint + inputValue)!)
                     .onShake {
                         skipSetup = false
                     }
             } else {
                 // Setup Device
                 VStack {
-                    Text("Connecting to " + APP_URL)
-                        .foregroundColor(.accentColor)
+                    TextField("Endpoint", text: $endpoint)
+                        .textFieldStyle(.roundedBorder)
+                        .font(.system(size: 50))
+                        .multilineTextAlignment(.center)
+                        .padding(50)
                     TextField("Device Code", text: $inputValue)
                         .textFieldStyle(.roundedBorder)
                         .font(.system(size: 100))
